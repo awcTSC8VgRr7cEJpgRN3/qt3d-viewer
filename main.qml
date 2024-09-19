@@ -56,8 +56,6 @@ Window {
         var component = Qt.createComponent("DynamicModel.qml");
 
         if (component.status === Component.Ready) {
-            // TODO
-            // `threeDScene.sceneRoot` not work.
             var dynamicModel = component.createObject(threeDScene.sceneRoot);
 
             if (dynamicModel === null) {
@@ -65,8 +63,6 @@ Window {
                 return;
             }
 
-            // TODO
-            // `dynamicModel.source` not work.
             dynamicModel.source = selectedFile;
 
             // console.log("Model loaded successfully:", selectedFile);

@@ -5,6 +5,8 @@ import Qt3D.Extras // 2.0
 
 //Creating the root scene
 Entity {
+    property alias sceneRoot: sceneRoot
+
     id: sceneRoot
 
     //Adding camera
@@ -35,5 +37,5 @@ Entity {
 
     /*******************************************************************************/
 
-    H3Elephant {}
+    // H3Elephant {}
 }

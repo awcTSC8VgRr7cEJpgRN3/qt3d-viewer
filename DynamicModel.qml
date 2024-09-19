@@ -3,9 +3,9 @@ import Qt3D.Extras
 import Qt3D.Render
 
 Entity {
-    id: dynamicModel
-
     property alias source: mesh.source
+
+    id: dynamicModel
 
     components: [
         Mesh {
